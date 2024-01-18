@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Card Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">Card Details</h1>
+
+    <table class="table">
+        <tr>
+            <th>Mobile Number:</th>
+            <td><span th:text="${cardsDto.mobileNumber}"></span></td>
+        </tr>
+        <tr>
+            <th>Card Number:</th>
+            <td><span th:text="${cardsDto.cardNumber}"></span></td>
+        </tr>
+        <tr>
+            <th>Card Type:</th>
+            <td><span th:text="${cardsDto.cardType}"></span></td>
+        </tr>
+        <tr>
+            <th>Total Limit:</th>
+            <td><span th:text="${cardsDto.totalLimit}"></span></td>
+        </tr>
+        <tr>
+            <th>Amount Used:</th>
+            <td><span th:text="${cardsDto.amountUsed}"></span></td>
+        </tr>
+        <tr>
+            <th>Available Amount:</th>
+            <td><span th:text="${cardsDto.availableAmount}"></span></td>
+        </tr>
+    </table>
+
+    <div class="d-flex justify-content-center">
+        <a th:href="@{/api/deleteCard/{mobileNumber}(mobileNumber=${cardsDto.mobileNumber})}" class="btn btn-danger">DELETE</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
