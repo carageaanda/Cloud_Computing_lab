@@ -2,7 +2,7 @@
 
 Description:
 
-The project adopts a microservices architecture, leveraging Docker for containerization and Thymeleaf for the front-end. Each microservice is designed to operate independently, and the overall application is orchestrated through a set of interconnected services.
+The project adopts a microservices architecture, leveraging Docker for containerization, Thymeleaf for the front-end, and Spring for the backend. Each microservice is designed to operate independently, and the overall application is orchestrated through a set of interconnected services.
 
 Key Components:
 
